@@ -11,11 +11,9 @@ https://github.com/snapcore/snapd/wiki/Gadget-snap
 
 ## Reporting Issues
 
-Please report all issues on the Launchpad project page
-https://bugs.launchpad.net/snap-pc/+filebug
-
-We use Launchpad to track issues as this allows us to coordinate multiple
-projects better than what is available with Github issues.
+For upstream issues, please report all issues on the Launchpad project page
+https://bugs.launchpad.net/snap-pc/+filebug. For FWTS live specific
+issues, please report them here.
 
 ## Building
 

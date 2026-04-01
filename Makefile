@@ -26,8 +26,10 @@ GRUB_MODULES = \
 	minicmd \
 	normal \
 	part_gpt \
+	part_msdos \
 	png \
 	reboot \
+	regexp \
 	search \
 	search_fs_uuid \
 	search_fs_file \
@@ -36,20 +38,6 @@ GRUB_MODULES = \
 	squash4 \
 	test \
 	true \
-	btrfs \
-	hfsplus \
-	iso9660 \
-	part_apple \
-	part_msdos \
-	password_pbkdf2 \
-	zfs \
-	zfscrypt \
-	zfsinfo \
-	lvm \
-	mdraid09 \
-	mdraid1x \
-	raid5rec \
-	raid6rec \
 	video
 
 all:

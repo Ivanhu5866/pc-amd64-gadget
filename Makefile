@@ -49,6 +49,10 @@ all:
 	# BIOS boot partition must be defined with an absolute offset.  The
 	# particular value here is 2049, or 0x01 0x08 0x00 0x00 in little-endian.
 	/bin/echo -n -e '\x01\x08\x00\x00' | dd of=pc-core.img seek=500 bs=1 conv=notrunc
+	sbverify --list $(SNAPCRAFT_STAGE)/usr/lib/shim/shimx64.efi.dualsigned | \
+		grep -E 'Canonical Ltd. Secure Boot Signing'
+	sbverify --list $(SNAPCRAFT_STAGE)/usr/lib/grub/x86_64-efi-signed/grubx64.efi.signed | \
+		grep -E 'Canonical Ltd. Secure Boot Signing'
 	cp $(SNAPCRAFT_STAGE)/usr/lib/shim/shimx64.efi.dualsigned shim.efi.signed
 	cp $(SNAPCRAFT_STAGE)/usr/lib/grub/x86_64-efi-signed/grubx64.efi.signed grubx64.efi
 

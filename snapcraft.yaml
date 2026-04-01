@@ -9,6 +9,10 @@ grade: stable
 confinement: strict
 icon: icon.png
 
+# Min version to support shim 15.7
+assumes:
+  - snapd2.59.3
+
 parts:
   grub-prepare:
     plugin: nil
